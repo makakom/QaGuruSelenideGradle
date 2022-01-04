@@ -34,5 +34,6 @@ public class firstTest {
         $("#column-a").dragAndDropTo($("#column-b"));
         //Проверьте, что прямоугольники действительно поменялись
         $("#column-a").shouldHave(text("b"));
+        $("#column-b").shouldHave(text("a"));
     }
 }
