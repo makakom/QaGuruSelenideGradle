@@ -113,7 +113,7 @@ public class PracticeFormPage {
                 testData.getFirstName() + " " + testData.getLastName(), testData.getEmail(),
                 testData.getGender(), testData.getNumber(), dateFormat.format(testData.getDateOfBirth()),
                 "", testData.getHobbies().get(0) + ", " + testData.getHobbies().get(1), testData.getPicture(),
-                testData.getSubject(), testData.getState() + " " + testData.getCity()));
+                testData.getCurrentAddress(), testData.getState() + " " + testData.getCity()));
         return this;
     }
 
