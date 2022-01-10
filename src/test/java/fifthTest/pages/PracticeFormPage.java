@@ -18,8 +18,6 @@ import static com.codeborne.selenide.Selenide.*;
 public class PracticeFormPage {
 
     public PracticeFormPage() {
-        open("https://demoqa.com/automation-practice-form");
-        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
     }
 
     SelenideElement
@@ -35,6 +33,12 @@ public class PracticeFormPage {
             stateInput = $("#react-select-3-input"),
             cityInput = $("#react-select-4-input"),
             submit = $("#submit");
+
+    public PracticeFormPage openPracticeFormPage() {
+        open("https://demoqa.com/automation-practice-form");
+        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+        return this;
+    }
 
     public PracticeFormPage fillFirsName(String firstName) {
         this.firstName.val(firstName);
@@ -110,10 +114,10 @@ public class PracticeFormPage {
     public PracticeFormPage assertForm(TestData testData) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMMM,yyyy", Locale.ENGLISH);
         $$x("//div[@class='modal-body']//td[2]").shouldHave(CollectionCondition.exactTexts(
-                testData.getFirstName() + " " + testData.getLastName(), testData.getEmail(),
-                testData.getGender(), testData.getNumber(), dateFormat.format(testData.getDateOfBirth()),
-                "", testData.getHobbies().get(0) + ", " + testData.getHobbies().get(1), testData.getPicture(),
-                testData.getCurrentAddress(), testData.getState() + " " + testData.getCity()));
+                testData.firstName + " " + testData.lastName, testData.email,
+                testData.gender, testData.number, dateFormat.format(testData.dateOfBirth),
+                "", testData.hobbies.get(0) + ", " + testData.hobbies.get(1), testData.picture,
+                testData.currentAddress, testData.state + " " + testData.city));
         return this;
     }
 
