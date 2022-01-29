@@ -30,7 +30,7 @@ public class StepTest {
 
     @Step("Кликнуть по {index} результату поиска")
     private void clickLinkByIndex(int index) {
-        $$("ul.repo-list li").get(1).$("a").click();
+        $$("ul.repo-list li").get(index).$("a").click();
     }
 
     @Step("Проверить, что присутствует вкладка - '{nameTab}'")
