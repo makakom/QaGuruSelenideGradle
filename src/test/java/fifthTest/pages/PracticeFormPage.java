@@ -113,11 +113,11 @@ public class PracticeFormPage {
 
     public PracticeFormPage assertForm(TestData testData) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMMM,yyyy", Locale.ENGLISH);
-        $$x("//div[@class='modal-body']//td[2]").shouldHave(CollectionCondition.exactTexts(
-                testData.firstName + " " + testData.lastName, testData.email,
-                testData.gender, testData.number, dateFormat.format(testData.dateOfBirth),
-                "", testData.hobbies.get(0) + ", " + testData.hobbies.get(1), testData.picture,
-                testData.currentAddress, testData.state + " " + testData.city));
+        $(".table").shouldHave(text(
+                testData.firstName + " " + testData.lastName), text(testData.email),
+                text(testData.gender), text(testData.number), text(dateFormat.format(testData.dateOfBirth)),
+                text(testData.hobbies.get(0) + ", " + testData.hobbies.get(1)), text(testData.picture),
+                text(testData.currentAddress), text(testData.state + " " + testData.city));
         return this;
     }
 
