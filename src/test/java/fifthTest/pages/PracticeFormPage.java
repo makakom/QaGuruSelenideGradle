@@ -116,7 +116,7 @@ public class PracticeFormPage {
         $(".table").shouldHave(text(
                 testData.firstName + " " + testData.lastName), text(testData.email),
                 text(testData.gender), text(testData.number), text(dateFormat.format(testData.dateOfBirth)),
-                text(testData.hobbies.get(0) + ", " + testData.hobbies.get(1)), text(testData.picture),
+                text(testData.hobbies.get(0) + ", " + testData.hobbies.get(1)),
                 text(testData.currentAddress), text(testData.state + " " + testData.city));
         return this;
     }

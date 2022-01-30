@@ -23,7 +23,6 @@ public class NinthTest extends BaseTest {
                 .fillDateOfBirth(testData.dateOfBirth)
                 .fillSubject(testData.subject)
                 .selectHobbies(testData.hobbies)
-                .uploadPicture(testData.picture)
                 .fillCurrentAddress(testData.currentAddress)
                 .fillState(testData.state)
                 .fillCity(testData.city)
