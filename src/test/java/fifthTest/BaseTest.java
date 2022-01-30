@@ -18,7 +18,7 @@ public class BaseTest {
 
         String user = System.getProperty("login");
         String password = System.getProperty("password");
-        String remoteUrl = System.getProperty("remoteurl");
+        String remoteUrl = System.getProperty("remoteUrl");
         String browser = System.getProperty("browser", "chrome1");
         String version = System.getProperty("version", "911");
 
