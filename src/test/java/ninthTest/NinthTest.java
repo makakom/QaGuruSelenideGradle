@@ -1,8 +1,8 @@
 package ninthTest;
 
-import fifthTest.BaseTest;
-import fifthTest.TestData;
-import fifthTest.pages.PracticeFormPage;
+import tenthTest.BaseTest;
+import tenthTest.TestData;
+import tenthTest.pages.PracticeFormPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

@@ -1,9 +1,7 @@
-package fifthTest.pages;
+package tenthTest.pages;
 
-import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.SelenideElement;
-import com.github.javafaker.DateAndTime;
-import fifthTest.TestData;
+import tenthTest.TestData;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

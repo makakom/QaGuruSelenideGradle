@@ -1,4 +1,4 @@
-package fifthTest;
+package tenthTest;
 
 import com.github.javafaker.Faker;
 
