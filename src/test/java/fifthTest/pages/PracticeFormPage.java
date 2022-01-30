@@ -101,8 +101,8 @@ public class PracticeFormPage {
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption(calendar.get(Calendar.MONTH));
         $(".react-datepicker__year-select").selectOption(String.valueOf(calendar.get(Calendar.YEAR)));
-        $(".react-datepicker__month").$(byText(
-                String.valueOf(calendar.get(Calendar.DAY_OF_MONTH)))).click();
+        $$x("//div[contains(@class,'datepicker__day ')][not(contains(@class,'outside-month'))]")
+                .find(text(String.valueOf(calendar.get(Calendar.DAY_OF_MONTH)))).click();
         return this;
     }
 

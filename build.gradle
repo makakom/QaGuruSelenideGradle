@@ -31,17 +31,17 @@ allure {
 
 dependencies {
     testImplementation(
-            'org.junit.jupiter:junit-jupiter:$junitVersion',
-            'org.junit.jupiter:junit-jupiter-api:$junitVersion',
-            'io.qameta.allure:allure-selenide:$allureVersion',
-            'com.codeborne:selenide:6.2.0',
-            'com.codeborne:pdf-test:1.7.0',
-            'com.codeborne:xls-test:1.4.3',
-            'com.opencsv:opencsv:5.5.2',
-            'org.assertj:assertj-core:3.22.0',
+            "org.junit.jupiter:junit-jupiter:$junitVersion",
+            "org.junit.jupiter:junit-jupiter-api:$junitVersion",
+            "io.qameta.allure:allure-selenide:$allureVersion",
+            "com.codeborne:selenide:6.2.1",
+            "com.codeborne:pdf-test:1.7.0",
+            "com.codeborne:xls-test:1.4.3",
+            "com.opencsv:opencsv:5.5.2",
+            "org.assertj:assertj-core:3.22.0",
             "com.github.javafaker:javafaker:1.0.2"
     )
-    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:$junitVersion',
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion",
             "org.slf4j:slf4j-simple:1.7.32")
 }
 
