@@ -4,8 +4,10 @@ import fifthTest.BaseTest;
 import fifthTest.TestData;
 import fifthTest.pages.PracticeFormPage;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("ninthTest")
 public class NinthTest extends BaseTest {
 
     PracticeFormPage practiceFormPage = new PracticeFormPage();
