@@ -1,11 +1,17 @@
 import org.junit.jupiter.api.Test;
-
+import com.codeborne.selenide.Configuration;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class firstTest {
+import org.junit.jupiter.api.BeforeAll;
+class firstTest {
+
+    @BeforeAll
+    static void BrowserSize() {
+        Configuration.browserSize = "1920x3072";
+    }
 
     @Test
     void searchExampleCodeForJUnit5() {
