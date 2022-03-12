@@ -22,14 +22,10 @@ public class BaseTest {
 //        String user = System.getProperty("login");
 //        String password = System.getProperty("password");
 //        String remoteUrl = System.getProperty("remoteUrl");
-        String browser = System.getProperty("browser");
-        String version = System.getProperty("version");
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = config.server();
-        Configuration.browser = browser;
-        Configuration.browserVersion = version;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
