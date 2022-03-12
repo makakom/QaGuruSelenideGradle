@@ -13,6 +13,7 @@ public class SystemPropertiesTest extends BaseTest {
 
     @Test
     @Tag("properties")
+    @Tag("owner")
     @DisplayName("Проверка заполнения формы студента")
     public void checkStudentFormTest() {
         practiceFormPage.openPracticeFormPage();
