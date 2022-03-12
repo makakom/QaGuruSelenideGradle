@@ -27,7 +27,7 @@ public class BaseTest {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = config.server();
-        step(config.server());
+        System.out.println(config.server());
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
